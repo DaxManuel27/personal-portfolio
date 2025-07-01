@@ -4,6 +4,7 @@ import React from "react";
 interface AboutProps {
   name?: string;
   bio?: string;
+  bio1?: string;
 }
 
 export default function About({
