@@ -5,6 +5,7 @@ interface AboutProps {
   name?: string;
   bio?: string;
   bio1?: string;
+  bio2?: string;
 }
 
 export default function About({
@@ -34,7 +35,7 @@ export default function About({
             Software Engineering Student @ UNB
           </h2>
           <p className="text-lg text-text-secondary max-w-prose mb-2">{bio}</p>
-          <p className="text-lg text-text-secondary max-w-prose mb-2">{bio1}</p>
+          <p className="text-lg text-text-secondary max-w-prose mb-2`">{bio1}</p>
           <p className="text-lg text-text-secondary max-w-prose">{bio2}</p>
         </div>
       </div>
