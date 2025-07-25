@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 const skillGroups = [
@@ -17,25 +19,33 @@ const skillGroups = [
 
 export default function TechnicalSkills() {
   return (
-    <div className="card card-hover animate-fade-in flex flex-col items-center justify-center h-full">
-      <h2 className="text-3xl font-bold text-text mb-8 text-center">Technical Skills</h2>
-      <div className="w-full max-w-5xl space-y-10">
-        {skillGroups.map((group) => (
-          <div key={group.title}>
-            <h3 className="text-2xl font-semibold text-accent mb-6 text-center">{group.title}</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {group.skills.map((skill) => (
-                <div
-                  key={skill}
-                  className="bg-black/20 rounded-lg p-6 border border-white/10 hover:bg-black/40 hover:border-accent/50 transition-all duration-300 cursor-pointer flex flex-col items-center"
-                >
-                  <span className="text-lg font-semibold text-accent text-center">{skill}</span>
-                </div>
-              ))}
+    <section className="w-full py-32">
+      <div className="max-w-[1400px] mx-auto px-6">
+        <h2 className="text-6xl font-bold text-purple-300 mb-16 text-center">Technical Skills</h2>
+        <div className="w-full space-y-20">
+          {skillGroups.map((group) => (
+            <div key={group.title} className="max-w-6xl mx-auto">
+              <h3 className="text-3xl font-semibold text-purple-200 mb-10 text-center">{group.title}</h3>
+              <div className="flex flex-wrap justify-center gap-6">
+                {group.skills.map((skill) => (
+                  <div
+                    key={skill}
+                    className={`bg-zinc-900 rounded-xl py-4 px-6 border border-purple-500/20 hover:bg-gradient-to-br hover:from-indigo-500/20 hover:to-purple-600/20 transition-all duration-300 cursor-pointer text-center motion-safe:animate-[float_3s_ease-in-out_infinite]
+                    ${group.title === "Languages" ? "w-[200px]" : ""}
+                    ${group.title === "Frameworks / Libraries" ? "w-[170px]" : ""}
+                    ${group.title === "Developer Tools" ? "w-[130px]" : ""}`}
+                    style={{
+                      animationDelay: `${(group.skills.indexOf(skill) * 0.2)}s`
+                    }}
+                  >
+                    <span className="text-xl font-semibold text-purple-300 text-center block">{skill}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 } 
