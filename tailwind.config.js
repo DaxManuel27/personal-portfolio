@@ -1,16 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx}"
-  ],
-  darkMode: "class",
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
-        background: "#0D0D0D",
-        primary: "#1E1E2F",
-        accent: "#8B5CF6",
-        text: "#E1E1E1",
+        background: "transparent",
+        primary: "rgba(0, 0, 0, 0.3)", // Darker glassmorphism card
+        accent: "#00E5FF", // A vibrant, futuristic light blue (cyan)
+        text: "#f0f6fc", // Off-white, from GitHub's dark theme
+        "text-secondary": "rgba(240, 246, 252, 0.7)", // Semi-transparent off-white
       },
       keyframes: {
         "fade-in": {
@@ -20,7 +18,7 @@ module.exports = {
       },
       animation: {
         "fade-in": "fade-in 0.6s ease-out forwards",
-      }
+      },
     },
   },
   plugins: [],

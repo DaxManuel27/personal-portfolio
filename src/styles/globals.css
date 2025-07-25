@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,4 +15,20 @@ html {
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #f0f6fc; /* Off-white text */
+  background-color: #000000; /* Solid black background */
+  cursor: none;
+}
+
+@layer components {
+  .card {
+    @apply bg-black/60 rounded-2xl p-8;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1.5px solid rgba(0, 229, 255, 0.12);
+  }
 } 

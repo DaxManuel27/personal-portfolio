@@ -92,45 +92,53 @@ const resumeData = [
 ];
 
 export default function ResumeSection() {
-  const resumeUrl = "/resume.pdf"; // Optional: still provide download link
+  const resumeUrl = "/Jul2025Resume.pdf"; // Make sure PDF is in public folder
 
   return (
-    <div className="flex flex-col items-center w-full px-4 max-w-5xl animate-fade-in">
-      <h2 className="text-4xl font-semibold mb-12 text-accent">Resume</h2>
+    <div className="card animate-fade-in w-full max-w-4xl flex flex-col items-center justify-center h-full">
+      <div className="flex justify-between items-center mb-8 w-full">
+        <h2 className="text-3xl font-bold text-text">Resume</h2>
+        <a
+          href={resumeUrl}
+          download
+          className="px-4 py-2 rounded-md bg-accent/20 text-accent font-semibold hover:bg-accent/30 transition-colors"
+        >
+          Download PDF
+        </a>
+      </div>
 
-      <div className="w-full space-y-10 text-text">
+      <div className="space-y-8 text-left w-full">
         {resumeData.map((section) => (
-          <div key={section.heading} className="space-y-4">
-            <h3 className="text-2xl font-semibold text-white">{section.heading}</h3>
-            <div className="h-px w-full bg-accent/40 mb-4" />
-            <ul className="space-y-6 pl-2">
+          <div key={section.heading}>
+            <h3 className="text-2xl font-bold text-accent mb-4 pb-2 border-b-2 border-accent/20">
+              {section.heading}
+            </h3>
+            <ul className="space-y-6">
               {section.items.map((item, idx) => (
-                <li key={idx} className="">
-                  <div className="flex flex-col md:flex-row md:items-baseline md:justify-between">
-                    <span className="text-xl font-medium text-white">{item.title}</span>
-                    {item.date && <span className="text-text/60 text-sm md:text-base">{item.date}</span>}
+                <li key={idx}>
+                  <div className="flex flex-col md:flex-row md:justify-between md:items-baseline">
+                    <h4 className="text-lg font-semibold text-text">
+                      {item.title}
+                    </h4>
+                    {item.date && (
+                      <p className="text-sm text-text-secondary md:text-right">
+                        {item.date}
+                      </p>
+                    )}
                   </div>
-                  {item.description && (
-                    <ul className="list-disc pl-6 mt-2 space-y-1 text-text/80 md:max-w-3xl">
+                  <div className="prose prose-invert max-w-none text-text-secondary mt-1">
+                    <ul className="list-disc pl-5 space-y-1">
                       {item.description.split("\n").map((line, i) => (
                         <li key={i}>{line.replace(/^•\s*/, "")}</li>
                       ))}
                     </ul>
-                  )}
+                  </div>
                 </li>
               ))}
             </ul>
           </div>
         ))}
       </div>
-
-      <a
-        href={resumeUrl}
-        download
-        className="mt-12 px-6 py-3 rounded-md bg-accent text-background font-medium hover:opacity-90 transition-opacity text-lg"
-      >
-        Download PDF
-      </a>
     </div>
   );
 } 
