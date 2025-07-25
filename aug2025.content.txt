@@ -1,0 +1,76 @@
+Nikolas “Dax” Manuel 
+| dax.manuel@unb.ca | (506) 897-2218 | LinkedIn | GitHub | Portfolio Website 
+E
+DUCATION
+ 
+University of New Brunswick  Fredericton, NB 
+Bachelor of Science in Software Engineering | GPA: 3.7 (Dean’s List).               
+Relevant Coursework: Software Engineering, Systems Programming, OOP in Java, Databases, Discrete Math, 
+Calculus, Physics 
+P
+ROJECTS
+ 
+CheetahCode | GitHub | Website                                                 ReactJS, NodeJs, ExpressJS, Supabase 
+• 
+Developed a full stack web app allowing users to practice and test coding speed in real time.
+ 
+• 
+Implemented user authentication using Supabase Auth, supporting registration, login, and session tokens.
+ 
+• 
+Designed RESTful APIs using Express to handle user authentication, user results, and code snippet management.
+ 
+• 
+Crafted a responsive typing area component using React ensuring real time and seamless user interaction.
+ CodeSimplify Chrome Extension | GitHub | Download              NodeJS, ExpressJS, Gemini API, HTML/CSS 
+• 
+Enabled developers to understand codebases, by providing real time code explanations, through a chrome 
+extension powered by Gemini API. 
+ 
+• 
+Published Chrome Web store by building a full stack application with NodeJS and Express.  
+ 
+• 
+Designed a sleek looking popup displaying the code explanation using HTML and CSS. 
+ Premier League Prediction Model | GitHub                                          Python, Scikit-Learn, Pandas, Numpy  
+• 
+Achieved 60% accuracy on betting props by training a linear regression model using Scikit-learn, indicating a 
+profitable model.
+ 
+• 
+Boosted model performance through preprocessing data using pandas and numpy.
+ 
+• 
+Tested the model on multiple betting props, such as final score, total goals, and both teams to score. 
+ T
+ECHNICAL
+ S
+KILLS 
+ 
+Languages: Java, JavaScript, Python, HTML/CSS, SQL 
+Frameworks/Libraries: NodeJS, ExpressJS, React, Scikit-learn , pandas, numpy 
+Developer Tools: Git, GitHub, VS Code, IntelliJ Idea, MacOS, Windows, Linux 
+Courses/Certifications: Code with Mosh: Ultimate JavaScript Series, Code with Mosh: Data Structures and 
+Algorithms. 
+E
+XPERIENCE
+ 
+Youth Soccer Coach April 2024 - Present 
+Fredericton District Soccer Association Fredericton, NB 
+• 
+Demonstrated strong leadership in managing groups of over 100 children in a playing field.
+ 
+• 
+Provided mentorship and coaching to young athletes, to improve their understanding of the game.
+ Merchandiser April 2025 – July 2025 
+PepsiCo Beverages  Fredericton, NB 
+• 
+Used strong attention to detail to merchandise PepsiCo products properly and at pace to increase sales.
+ Team Member July 2022 – July 2024 
+Tim Hortons Fredericton, NB 
+• 
+Demonstrated a strong ability to work in a fast-paced and high-pressure environment.
+ OTHER 
+    UNB Men’s Varsity Soccer Player   Aug 2024 - Present 
+    
+----------------Page (0) Break----------------

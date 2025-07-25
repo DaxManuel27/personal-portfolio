@@ -4,6 +4,8 @@ import Link from "next/link"; // We can still use Next's Link for the home butto
 
 const links = [
   { href: "#about", label: "About" },
+  { href: "#education", label: "Education" },
+  { href: "#technical-skills", label: "Technical Skills" },
   { href: "#projects", label: "Projects" },
   { href: "#resume", label: "Resume" },
   { href: "#contact", label: "Contact" },

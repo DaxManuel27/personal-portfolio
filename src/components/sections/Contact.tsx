@@ -31,7 +31,7 @@ const socials: SocialLink[] = [
 
 export default function Contact() {
   return (
-    <div className="card animate-fade-in text-center max-w-lg flex flex-col items-center justify-center h-full">
+    <div className="card card-hover animate-fade-in text-center max-w-lg flex flex-col items-center justify-center h-full">
       <h2 className="text-3xl font-bold text-text mb-4">Get In Touch</h2>
       <p className="text-lg text-text-secondary mb-8">
         Feel free to reach out for any opportunities, questions, or just to say

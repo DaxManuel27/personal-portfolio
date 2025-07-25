@@ -30,5 +30,12 @@ body {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1.5px solid rgba(0, 229, 255, 0.12);
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  }
+  .card-hover:hover {
+    border-color: #00E5FF !important;
+    box-shadow: 0 8px 32px 0 rgba(0,229,255,0.15);
+    transform: translateY(-8px) scale(1.02);
+    z-index: 2;
   }
 } 

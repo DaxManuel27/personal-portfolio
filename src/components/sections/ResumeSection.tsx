@@ -1,52 +1,65 @@
 import React from "react";
 
-// TODO: Replace these placeholders with your actual resume content
 const resumeData = [
   {
     heading: "Education",
     items: [
       {
-        title: "Bachelor of Software Engineering, University of New Brunswick",
-        date: "May 2029 | GPA 3.7",
+        title: "University of New Brunswick, Fredericton, NB",
+        date: "GPA: 3.7 (Dean’s List)",
         description:
-          "Key coursework: Java, Databases, Discrete Mathematics, Calculus, Physics",
+          "Relevant Coursework: Software Engineering, Systems Programming, OOP in Java, Databases, Discrete Math, Calculus, Physics",
       },
     ],
   },
   {
-    heading: "Technical Projects",
+    heading: "Projects",
     items: [
       {
-        title: "Premier League Match Prediction Model",
+        title: "CheetahCode | GitHub | Website",
         description:
-          "• Consumed football-data.org API to gather historical match data and team statistics.\n• Cleaned and transformed nested JSON with Python / pandas.\n• Used Sci-Kit learn to create the ML model using linear regression.",
+          "ReactJS, NodeJs, ExpressJS, Supabase\n" +
+          "• Developed a full stack web app allowing users to practice and test coding speed in real time.\n" +
+          "• Implemented user authentication using Supabase Auth, supporting registration, login, and session tokens.\n" +
+          "• Designed RESTful APIs using Express to handle user authentication, user results, and code snippet management.\n" +
+          "• Crafted a responsive typing area component using React ensuring real time and seamless user interaction.",
       },
       {
-        title: "Assignment Planner (ReactJS)",
+        title: "CodeSimplify Chrome Extension | GitHub | Download",
         description:
-          "• Built a single-page web app that lets students organize assignments and track grades.\n• Implemented modern, responsive UI with custom CSS and state management with React hooks.",
+          "NodeJS, ExpressJS, Gemini API, HTML/CSS\n" +
+          "• Enabled developers to understand codebases, by providing real time code explanations, through a chrome extension powered by Gemini API.\n" +
+          "• Published Chrome Web store by building a full stack application with NodeJS and Express.\n" +
+          "• Designed a sleek looking popup displaying the code explanation using HTML and CSS.",
       },
       {
-        title: "Wordle Clone",
+        title: "Premier League Prediction Model | GitHub",
         description:
-          "• Re-created the popular game using vanilla HTML, CSS, and JavaScript.\n• Implemented guess validation, coloured feedback squares, keyboard input, and win / loss states.",
+          "Python, Scikit-Learn, Pandas, Numpy\n" +
+          "• Achieved 60% accuracy on betting props by training a linear regression model using Scikit-learn, indicating a profitable model.\n" +
+          "• Boosted model performance through preprocessing data using pandas and numpy.\n" +
+          "• Tested the model on multiple betting props, such as final score, total goals, and both teams to score.",
       },
     ],
   },
   {
-    heading: "Skills",
+    heading: "Technical Skills",
     items: [
       {
-        title: "Programming Languages",
-        description: "SQL, Java, JavaScript, Python, HTML, CSS",
+        title: "Languages",
+        description: "Java, JavaScript, Python, HTML/CSS, SQL",
       },
       {
-        title: "Frameworks & Libraries",
-        description: "ReactJS, Spring Boot, Sci-Kit Learn",
+        title: "Frameworks/Libraries",
+        description: "NodeJS, ExpressJS, React, Scikit-learn, pandas, numpy",
       },
       {
-        title: "Tools & Platforms",
-        description: "MacOS, Windows, Linux, VS Code, MariaDB, Git, Object-Oriented Programming principles",
+        title: "Developer Tools",
+        description: "Git, GitHub, VS Code, IntelliJ Idea, MacOS, Windows, Linux",
+      },
+      {
+        title: "Courses/Certifications",
+        description: "Code with Mosh: Ultimate JavaScript Series, Code with Mosh: Data Structures and Algorithms.",
       },
     ],
   },
@@ -54,88 +67,77 @@ const resumeData = [
     heading: "Experience",
     items: [
       {
-        title: "Merchandiser – PepsiCo Beverages Company",
-        date: "Apr 2024 – Present",
+        title: "Youth Soccer Coach",
+        date: "April 2024 - Present | Fredericton District Soccer Association, Fredericton, NB",
         description:
-          "• Merchandise Pepsi products to planogram standards with strong attention to detail.\n• Work efficiently at pace to ensure all daily tasks are completed across multiple store locations.",
+          "• Demonstrated strong leadership in managing groups of over 100 children in a playing field.\n" +
+          "• Provided mentorship and coaching to young athletes, to improve their understanding of the game.",
       },
       {
-        title: "Soccer Coach – Fredericton District Soccer Association",
-        date: "Apr 2024 – Present",
+        title: "Merchandiser",
+        date: "April 2025 – July 2025 | PepsiCo Beverages, Fredericton, NB",
         description:
-          "• Lead and mentor groups of 100+ youth players aged 5-17.\n• Plan drills, explain techniques, and provide constructive feedback tailored to individual skill levels.",
+          "• Used strong attention to detail to merchandise PepsiCo products properly and at pace to increase sales.",
       },
       {
-        title: "Summer Camp Counsellor – REDS Youth Programs",
-        date: "Jul 2024",
+        title: "Team Member",
+        date: "July 2022 – July 2024 | Tim Hortons, Fredericton, NB",
         description:
-          "• Supervised 60 campers, ensuring safety and inclusion.\n• Collaborated with staff to design engaging daily activities and quickly resolve conflicts among campers.",
-      },
-      {
-        title: "Team Member – Tim Hortons",
-        date: "Jul 2022 – Jul 2024",
-        description:
-          "• Thrived in fast-paced, high-pressure environment serving 500+ customers per shift.\n• Applied problem-solving skills to handle order issues and maintain customer satisfaction while following strict health & safety protocols.",
+          "• Demonstrated a strong ability to work in a fast-paced and high-pressure environment.",
       },
     ],
   },
   {
-    heading: "Extracurricular",
+    heading: "Other",
     items: [
       {
-        title: "UNB Men's Varsity Soccer Player",
-        date: "Aug 2024 – Present",
-        description: "Compete at the varsity level while balancing rigorous academic schedule and team commitments.",
+        title: "UNB Men’s Varsity Soccer Player",
+        date: "Aug 2024 - Present",
+        description: "",
       },
     ],
   },
 ];
 
 export default function ResumeSection() {
-  const resumeUrl = "/Jul2025Resume.pdf"; // Make sure PDF is in public folder
-
   return (
-    <div className="card animate-fade-in w-full max-w-4xl flex flex-col items-center justify-center h-full">
-      <div className="flex justify-between items-center mb-8 w-full">
-        <h2 className="text-3xl font-bold text-text">Resume</h2>
-        <a
-          href={resumeUrl}
-          download
-          className="px-4 py-2 rounded-md bg-accent/20 text-accent font-semibold hover:bg-accent/30 transition-colors"
-        >
-          Download PDF
-        </a>
-      </div>
-
-      <div className="space-y-8 text-left w-full">
+    <div className="card card-hover animate-fade-in w-full max-w-4xl flex flex-col items-center justify-center h-full">
+      <h2 className="text-3xl font-bold text-text mb-8 text-center">Resume</h2>
+      <a
+        href="/aug2025.pdf"
+        download
+        className="mb-8 px-6 py-2 rounded-lg bg-accent text-black font-semibold hover:bg-cyan-300 transition-colors duration-200"
+      >
+        Download PDF
+      </a>
+      <div className="w-full space-y-10">
         {resumeData.map((section) => (
           <div key={section.heading}>
-            <h3 className="text-2xl font-bold text-accent mb-4 pb-2 border-b-2 border-accent/20">
-              {section.heading}
-            </h3>
-            <ul className="space-y-6">
+            <h3 className="text-2xl font-bold text-accent mb-1">{section.heading}</h3>
+            <hr className="border-accent mb-4" />
+            <div className="space-y-6">
               {section.items.map((item, idx) => (
-                <li key={idx}>
-                  <div className="flex flex-col md:flex-row md:justify-between md:items-baseline">
-                    <h4 className="text-lg font-semibold text-text">
-                      {item.title}
-                    </h4>
+                <div key={idx}>
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                    <span className="font-semibold text-text text-lg">{item.title}</span>
                     {item.date && (
-                      <p className="text-sm text-text-secondary md:text-right">
-                        {item.date}
-                      </p>
+                      <span className="text-text-secondary text-base md:text-right">{item.date}</span>
                     )}
                   </div>
-                  <div className="prose prose-invert max-w-none text-text-secondary mt-1">
-                    <ul className="list-disc pl-5 space-y-1">
-                      {item.description.split("\n").map((line, i) => (
-                        <li key={i}>{line.replace(/^•\s*/, "")}</li>
-                      ))}
+                  {item.description && (
+                    <ul className="list-disc list-inside text-text-secondary mt-1 whitespace-pre-line">
+                      {item.description.split("\n").map((line, i) =>
+                        line.trim().startsWith("•") ? (
+                          <li key={i}>{line.replace(/^•\s*/, "")}</li>
+                        ) : line.trim() !== "" ? (
+                          <li key={i} className="list-none pl-0">{line}</li>
+                        ) : null
+                      )}
                     </ul>
-                  </div>
-                </li>
+                  )}
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         ))}
       </div>
