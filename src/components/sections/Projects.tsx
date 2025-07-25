@@ -40,18 +40,18 @@ function ProjectCard({ project }: { project: Project }) {
     <div className="group w-full sm:w-[550px] h-96 cursor-pointer">
       <div className="relative preserve-3d w-full h-full transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
         {/* Front Side */}
-        <div className="absolute inset-0 w-full h-full flex items-center justify-center bg-zinc-900 rounded-xl shadow-lg [backface-visibility:hidden] border border-purple-500/20">
-          <h3 className="text-4xl font-bold text-purple-300 text-center px-8">{project.title}</h3>
+        <div className="absolute inset-0 w-full h-full flex items-center justify-center bg-zinc-900/80 rounded-xl [backface-visibility:hidden] border border-[#b266ff]">
+          <h3 className="text-4xl font-bold text-[#b266ff] text-center px-8">{project.title}</h3>
         </div>
         {/* Back Side */}
-        <div className="absolute inset-0 w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl shadow-lg [transform:rotateY(180deg)] [backface-visibility:hidden] border border-purple-300/20 p-12">
+        <div className="absolute inset-0 w-full h-full flex flex-col items-center justify-center bg-[#b266ff] rounded-xl [transform:rotateY(180deg)] [backface-visibility:hidden] border border-[#b266ff] p-12">
           <p className="text-white text-center mb-8 text-xl leading-relaxed">{project.description}</p>
           {project.link && (
             <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-purple-200 font-semibold hover:text-white transition-colors flex items-center gap-2 text-xl"
+              className="text-white font-semibold hover:text-zinc-200 transition-all flex items-center gap-2 text-xl"
             >
               View on GitHub
             </a>
@@ -66,7 +66,7 @@ export default function Projects() {
   return (
     <section className="w-full py-32 bg-white/5">
       <div className="max-w-[1400px] mx-auto px-6">
-        <h2 className="text-6xl font-bold text-purple-300 mb-20 text-center">
+        <h2 className="text-6xl font-bold text-[#b266ff] mb-20 text-center">
           Projects
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center [perspective:1000px]">
