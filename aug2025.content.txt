@@ -10,19 +10,7 @@ Calculus, Physics
 P
 ROJECTS
  
-CheetahCode | GitHub | Website                                                 ReactJS, NodeJs, ExpressJS, Supabase 
-• 
-Developed a full stack web app allowing users to practice and test coding speed in real time.
- 
-• 
-Implemented user authentication using Supabase Auth, supporting registration, login, and session tokens.
- 
-• 
-Designed RESTful APIs using Express to handle user authentication, user results, and code snippet management.
- 
-• 
-Crafted a responsive typing area component using React ensuring real time and seamless user interaction.
- CodeSimplify Chrome Extension | GitHub | Download              NodeJS, ExpressJS, Gemini API, HTML/CSS 
+CodeSimplify Chrome Extension | GitHub | Download              NodeJS, ExpressJS, Gemini API, HTML/CSS 
 • 
 Enabled developers to understand codebases, by providing real time code explanations, through a chrome 
 extension powered by Gemini API. 

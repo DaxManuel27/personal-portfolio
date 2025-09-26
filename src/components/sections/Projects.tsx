@@ -12,13 +12,6 @@ interface Project {
 
 const dummyProjects: Project[] = [
   {
-    title: "CheetahCode",
-    description:
-      "Full stack web app for practicing and testing coding speed in real time. Features user authentication, RESTful APIs, and a responsive typing area. (ReactJS, NodeJs, ExpressJS, Supabase)",
-    link: "https://github.com/DaxManuel27/cheetahcode",
-    imageUrl: "/cheetahcode-logo.png",
-  },
-  {
     title: "CodeSimplify Chrome Extension",
     description:
       "Chrome extension that provides real time code explanations using Gemini API. Full stack app with NodeJS, Express, and a sleek popup UI. (NodeJS, ExpressJS, Gemini API, HTML/CSS)",

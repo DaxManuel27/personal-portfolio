@@ -16,15 +16,6 @@ const resumeData = [
     heading: "Projects",
     items: [
       {
-        title: "CheetahCode | GitHub | Website",
-        description:
-          "ReactJS, NodeJs, ExpressJS, Supabase\n" +
-          "• Developed a full stack web app allowing users to practice and test coding speed in real time.\n" +
-          "• Implemented user authentication using Supabase Auth, supporting registration, login, and session tokens.\n" +
-          "• Designed RESTful APIs using Express to handle user authentication, user results, and code snippet management.\n" +
-          "• Crafted a responsive typing area component using React ensuring real time and seamless user interaction.",
-      },
-      {
         title: "CodeSimplify Chrome Extension | GitHub | Download",
         description:
           "NodeJS, ExpressJS, Gemini API, HTML/CSS\n" +
