@@ -30,7 +30,7 @@ const dummyProjects: Project[] = [
     title: "Cover Letter Generator",
     description:
       "AI-powered application that automatically generates personalized cover letters by analyzing job descriptions and resume content. Uses natural language processing to match relevant skills and experiences, creating tailored cover letters that highlight the most applicable qualifications for each position.",
-    link: "https://github.com/DaxManuel27/cover-letter-generator",
+    link: "https://github.com/DaxManuel27/CVGen",
   },
 ];
 
