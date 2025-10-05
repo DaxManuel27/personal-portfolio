@@ -28,19 +28,22 @@ const MatrixBackground = () => {
     }
 
     const draw = () => {
-      // Set a more opaque black background for a gentler trail effect
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.15)';
+      // Stronger fade effect to make trails disappear faster
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.25)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      ctx.fillStyle = 'rgba(0,229,255,0.7)'; // Softer, less bright blue
+      ctx.fillStyle = 'rgba(0,229,255,0.15)'; // Much more subtle opacity
       ctx.font = `${fontSize}px monospace`;
 
       for (let i = 0; i < drops.length; i++) {
+        // Skip some drops to reduce density
+        if (Math.random() > 0.3) continue;
+        
         const text = binary.charAt(Math.floor(Math.random() * binary.length));
         ctx.fillText(text, i * fontSize, drops[i] * fontSize);
 
         // Reset drop to the top randomly to make the rain effect uneven
-        if (drops[i] * fontSize > canvas.height && Math.random() > 0.985) {
+        if (drops[i] * fontSize > canvas.height && Math.random() > 0.98) {
           drops[i] = 0;
         }
 
@@ -49,7 +52,7 @@ const MatrixBackground = () => {
       }
     };
 
-    const interval = setInterval(draw, 50); // Slower animation
+    const interval = setInterval(draw, 120); // Much slower animation
 
     // Handle window resize
     const handleResize = () => {

@@ -32,6 +32,12 @@ const dummyProjects: Project[] = [
       "AI-powered application that automatically generates personalized cover letters by analyzing job descriptions and resume content. Uses natural language processing to match relevant skills and experiences, creating tailored cover letters that highlight the most applicable qualifications for each position.",
     link: "https://github.com/DaxManuel27/CVGen",
   },
+  {
+    title: "Vector Field Mapper",
+    description:
+      "Interactive mathematical visualization tool that renders vector fields from user-defined equations in real-time. Features dynamic plotting of directional flow patterns, customizable field parameters, and intuitive controls for exploring complex mathematical relationships through visual representation.",
+    link: "https://github.com/DaxManuel27/vector-field-mapper",
+  },
 ];
 
 function ProjectCard({ project }: { project: Project }) {
