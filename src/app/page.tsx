@@ -9,7 +9,7 @@ import Contact from "@/components/sections/Contact";
 
 export default function Home() {
   return (
-    <div className="h-screen w-screen overflow-y-scroll">
+    <div className="min-h-screen w-full overflow-y-auto overflow-x-hidden">
       <section id="hero" className="min-h-screen w-full flex items-center justify-center">
         <HeroHeader />
       </section>
