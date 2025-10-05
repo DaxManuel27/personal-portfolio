@@ -26,6 +26,12 @@ const dummyProjects: Project[] = [
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Premier_League_Logo.svg/800px-Premier_League_Logo.svg.png",
   },
+  {
+    title: "Cover Letter Generator",
+    description:
+      "AI-powered application that automatically generates personalized cover letters by analyzing job descriptions and resume content. Uses natural language processing to match relevant skills and experiences, creating tailored cover letters that highlight the most applicable qualifications for each position.",
+    link: "https://github.com/DaxManuel27/cover-letter-generator",
+  },
 ];
 
 function ProjectCard({ project }: { project: Project }) {
