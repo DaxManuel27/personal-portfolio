@@ -4,7 +4,6 @@ import About from "@/components/sections/About";
 import Education from "@/components/sections/Education";
 import TechnicalSkills from "@/components/sections/TechnicalSkills";
 import Projects from "@/components/sections/Projects";
-import ResumeSection from "@/components/sections/ResumeSection";
 import Contact from "@/components/sections/Contact";
 
 export default function Home() {
@@ -24,9 +23,6 @@ export default function Home() {
       </section>
       <section id="projects" className="min-h-screen w-full flex items-center justify-center">
         <Projects />
-      </section>
-      <section id="resume" className="min-h-screen w-full flex items-center justify-center">
-        <ResumeSection />
       </section>
       <section id="contact" className="min-h-screen w-full flex items-center justify-center">
         <Contact />

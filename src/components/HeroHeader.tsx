@@ -28,11 +28,13 @@ export default function HeroHeader() {
     typeText();
   }, []);
 
-  const handleViewProjects = () => {
-    const projectsSection = document.getElementById("projects");
-    projectsSection?.scrollIntoView({
-      behavior: "smooth",
-    });
+  const handleDownloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/DaxManuelOct9.pdf';
+    link.download = 'DaxManuel_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const handleContactMe = () => {
@@ -53,10 +55,10 @@ export default function HeroHeader() {
       </h2>
       <div className="flex flex-col sm:flex-row gap-4 items-center">
         <button
-          onClick={handleViewProjects}
+          onClick={handleDownloadResume}
           className="group relative px-8 py-4 bg-gradient-to-r from-[#b266ff] to-[#00E5FF] rounded-full text-white font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#b266ff]/25 active:scale-95"
         >
-          <span className="relative z-10">View Projects</span>
+          <span className="relative z-10">Download Resume</span>
           <div className="absolute inset-0 bg-gradient-to-r from-[#00E5FF] to-[#b266ff] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </button>
         <button
