@@ -30,7 +30,7 @@ export default function HeroHeader() {
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/DaxManuelOct9.pdf';
+    link.href = '/oct16.pdf';
     link.download = 'DaxManuel_Resume.pdf';
     document.body.appendChild(link);
     link.click();

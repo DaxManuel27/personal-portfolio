@@ -10,7 +10,7 @@ interface AboutProps {
 
 export default function About({
   name = "Dax Manuel",
-  bio = "I'm Dax, and I'm currently a Software Engineering Student at the University of New Brunswick. I am also a UNB Men's Varsity Soccer Player.",
+  bio = "I'm Dax, and I'm currently a Software Engineering Student at the University of New Brunswick. I am also a UNB Men's Varsity Soccer Player. Currently, I am working on the electric powertrain for UNB Formula SAE",
   bio1 = "I'm interested in AI, Tech, and Business opportunities where I can apply my technical skills alongside my soft skills.",
   bio2 = "Outside of coding, you can find me playing soccer, going out with friends, or doom scrolling on social media. Feel free to reach out to connect and chat about any projects, ideas, or just to say hi!",
   
