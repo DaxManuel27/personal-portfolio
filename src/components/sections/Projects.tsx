@@ -12,6 +12,13 @@ interface Project {
 
 const dummyProjects: Project[] = [
   {
+    title: "2D Physics Simulation",
+    description:
+      "A 2D physics simulation that simulates rigid body dynamics and collisions in a 2D space using C++",
+    link: "https://github.com/DaxManuel27/2D-Physics-Engine",
+    imageUrl: "/codesimplify-logo.png",
+  },
+  {
     title: "CodeSimplify Chrome Extension",
     description:
       "Chrome extension that provides real time code explanations using Gemini API. Full stack app with NodeJS, Express, and a sleek popup UI. (NodeJS, ExpressJS, Gemini API, HTML/CSS)",
@@ -19,7 +26,7 @@ const dummyProjects: Project[] = [
     imageUrl: "/codesimplify-logo.png",
   },
   {
-    title: "Premier League Sports Betting Model",
+    title: "Premier League Prediction Model",
     description:
       "Python project that collects match data, trains Sci-Kit Learn models, and predicts Premier League outcomes for betting insights.",
     link: "https://github.com/DaxManuel27/model",
